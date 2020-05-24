@@ -28,7 +28,7 @@ export default class GuideView {
       <div className="welcome is-guide">
         <div className="welcome-container">
           <section className="welcome-panel">
-            <h1 className="welcome-title">Get to know Atom!</h1>
+            
 
             <details
               className="welcome-card"
@@ -45,7 +45,7 @@ export default class GuideView {
                   />
                 </p>
                 <p>
-                  In Atom you can open individual files or a whole folder as a
+                  You can open individual files or a whole folder as a
                   project. Opening a folder will add a tree view to the editor
                   where you can browse all the files.
                 </p>
@@ -61,7 +61,7 @@ export default class GuideView {
                 <p className="welcome-note">
                   <strong>Next time:</strong> You can also open projects from
                   the menu, keyboard shortcut or by dragging a folder onto the
-                  Atom dock icon.
+                  dock icon.
                 </p>
               </div>
             </details>
@@ -150,7 +150,7 @@ export default class GuideView {
                   />
                 </p>
                 <p>
-                  One of the best things about Atom is the package ecosystem.
+                  One of the best things is the package ecosystem.
                   Installing packages adds new features and functionality you
                   can use to make the editor suit your needs. Let's install one.
                 </p>
@@ -184,7 +184,6 @@ export default class GuideView {
                     src="atom://welcome/assets/theme.svg"
                   />
                 </p>
-                <p>Atom comes with preinstalled themes. Let's try a few.</p>
                 <p>
                   <button
                     ref="themesButton"
@@ -195,8 +194,7 @@ export default class GuideView {
                   </button>
                 </p>
                 <p>
-                  You can also install themes created by the Atom community. To
-                  install new themes, click on "+ Install" and switch the toggle
+                  To install new themes, click on "+ Install" and switch the toggle
                   to "themes".
                 </p>
                 <p className="welcome-note">
@@ -239,43 +237,6 @@ export default class GuideView {
                 </p>
               </div>
             </details>
-
-            <details
-              className="welcome-card"
-              {...this.getSectionProps('init-script')}
-            >
-              <summary className="welcome-summary icon icon-code">
-                Hack on the <span class="welcome-highlight">Init Script</span>
-              </summary>
-              <div className="welcome-detail">
-                <p>
-                  <img
-                    className="welcome-img"
-                    src="atom://welcome/assets/code.svg"
-                  />
-                </p>
-                <p>
-                  The init script is a bit of JavaScript or CoffeeScript run at
-                  startup. You can use it to quickly change the behaviour of
-                  Atom.
-                </p>
-                <p>
-                  <button
-                    ref="initScriptButton"
-                    onclick={this.didClickInitScriptButton}
-                    className="btn btn-primary"
-                  >
-                    Open your Init Script
-                  </button>
-                </p>
-                <p>Uncomment some of the examples or try out your own.</p>
-                <p className="welcome-note">
-                  <strong>Next time:</strong> You can open your init script from
-                  Menu > {this.getApplicationMenuName()}.
-                </p>
-              </div>
-            </details>
-
             <details
               className="welcome-card"
               {...this.getSectionProps('snippets')}
@@ -291,7 +252,7 @@ export default class GuideView {
                   />
                 </p>
                 <p>
-                  Atom snippets allow you to enter a simple prefix in the editor
+                  Snippets allow you to enter a simple prefix in the editor
                   and hit tab to expand the prefix into a larger code block with
                   templated values.
                 </p>
@@ -336,7 +297,7 @@ export default class GuideView {
                     {this.getCommandPaletteKeyBinding()}
                   </kbd>
                   . This keystroke toggles the command palette, which lists
-                  every Atom command. It's a good way to learn more shortcuts.
+                  every command. It's a good way to learn more shortcuts.
                   Yes, you can try it now!
                 </p>
                 <p>

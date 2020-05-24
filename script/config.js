@@ -69,8 +69,8 @@ function getChannel(version) {
 
 function getAppName(channel) {
   return channel === 'stable'
-    ? 'Atom'
-    : `Atom ${process.env.ATOM_CHANNEL_DISPLAY_NAME ||
+    ? 'SGM Editor'
+    : `SGM Editor ${process.env.ATOM_CHANNEL_DISPLAY_NAME ||
         channel.charAt(0).toUpperCase() + channel.slice(1)}`;
 }
 
